@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+:root{
+    --white-color: #eef0f2;
+    --grey-color: #36393b;
+    --yellow-color: #FCF300;
+    --golden-color: #FFC600;
+    --dark-color: #0E0F19;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--white-color);
+    font-family: "Titillium Web", sans-serif;
+}
+
+h2, h3, h4, h5, strong{
+    color: var(--yellow-color);
+}
+
+/* HEADER */
+header{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.2rem;
+    text-align: center;
+    background-color: var(--dark-color);
+}
+
+header h1{
+    font-size: 2em;
+}
+
+header h2{
+    font-size: 1em;
+    font-weight: 300;
+}
+
+header nav ul li{
+    padding: 0.5rem;
+}
+header nav ul li a{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* MAIN */
+
+main{
+    box-shadow: inset 0 50px 10em 1em var(--dark-color);
+    text-align: center;
+    background-image: url("../assets/img/fans.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+
+    padding: 1em;
+}
+
+main h4{
+    font-weight: 600;
+}
+
+main .info{
+    margin: 5em 2em;
+}
+
+main form.join{
+    background-color: var(--grey-color);
+    padding: 2em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5em;
+}
+
+main form.join h4{
+    font-size: 2em;
+}
+main form.join input[type="email"]{
+    background-color: var(--grey-color);
+    padding: 1em;
+    border-radius: 1em;
+    border: 2px solid var(--yellow-color)
+}
+
+.button-link{
+    background-color: var(--golden-color);
+    padding: 1.25em;
+    border: 0;
+    border-radius: 1em;
+    cursor: pointer;
+    color: var(--dark-color);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* SESSIONS */
+section, footer{
+    background-color: var(--dark-color);
+    text-align: center;
+}
+
+section h1{
+    font-size: 1.5em;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+.card{
+    background-color: var(--grey-color);
+    padding: 1em;
+    text-align: center;
+    border-radius: 0.5em;
+    margin: .5em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card span.card-title{
+    font-weight: bold;
+}
+
+.card .card-img{
+    background-color: var(--grey-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 10em;
+    height: 12em;
+}
+.card .card-icon{
+    font-size: 5em;
+}
+
+.card-img#imageTite{
+    background-image: url("../assets/img/20180610_FIFA_Friendly_Match_Austria_vs._Brazil_Tite_850_0231.jpg");
+}
+
+.card-img#imageGuardiola{
+    background-image: url("../assets/img/Pep_2017_\(cropped\).jpg");
+}
+.card-img#imageMessi{
+    background-image: url("../assets/img/Lionel-Messi-Argentina-2022-FIFA-World-Cup_\(cropped\)\ .jpg");
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2em;
+}
+
+footer h1{
+    font-size: 1em;
+    padding: 2.5em 0;
+}
