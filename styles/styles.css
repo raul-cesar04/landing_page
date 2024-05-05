@@ -30,6 +30,9 @@ header{
     background-color: var(--dark-color);
 }
 
+header .logo h1{
+    margin-bottom: 0;
+}
 header h1{
     font-size: 2em;
 }
@@ -62,6 +65,11 @@ main{
 
 main h4{
     font-weight: 600;
+}
+
+main > h4{
+    font-size: 2em;
+    font-weight: 200;
 }
 
 main .info{
@@ -103,6 +111,9 @@ main form.join input[type="email"]{
 section, footer{
     background-color: var(--dark-color);
     text-align: center;
+}
+section{
+    padding-bottom: 5em;
 }
 
 section h1{
@@ -155,7 +166,7 @@ section h1{
 }
 
 
-footer{
+footer div.footer-container{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -165,4 +176,63 @@ footer{
 footer h1{
     font-size: 1em;
     padding: 2.5em 0;
+}
+
+/* MEDIA QUERIES */
+/* TABLETES */
+@media only screen and (min-width: 768px){
+    header nav{
+        display: flex;
+        justify-content: center;
+    }
+    header nav ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+    }
+
+    main > h4{
+        font-size: 3em;
+    }
+    main .main-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+
+
+    form.join{
+        max-width: 50%;
+        width: 100%;
+    }
+
+    .card-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 100;
+    }
+    footer div.footer-container{
+        max-width: 60%;
+        align-items: stretch;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .card-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

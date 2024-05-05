@@ -13,13 +13,15 @@
 <body>
     <header>
 
-        <h1>InFute 
-            <span class="material-symbols-outlined ic">
-                sports_soccer
-            </span>
-            Newsletter
-        </h1>
-        <h2>As Principais Notícias do Mundo do Futebol Nacional e Mundial</h2>
+        <div class="logo">
+            <h1>InFute 
+                <span class="material-symbols-outlined ic">
+                    sports_soccer
+                </span>
+                Newsletter
+            </h1>
+            <h2>As Principais Notícias do Mundo do Futebol Nacional e Mundial</h2>
+        </div>
 
         <nav>
             <ul>
@@ -33,21 +35,23 @@
         <h4>
             Acompanhe as principais do futebol do conforto de sua casa.
         </h4>
+        <div class="main-container">
 
-        <div class="info">
-            <p>
-                Receba por e-mail as principais noticias, resultados, mercado da bola, palpites, histórias e muito mais do mundo do esporte mais popular da terra.
-            </p>
-            <p>
-                Completamente <strong>de Graça</strong>
-            </p>
+            <div class="info">
+                <p>
+                    Receba por e-mail as principais noticias, resultados, mercado da bola, palpites, histórias e muito mais do mundo do esporte mais popular da terra.
+                </p>
+                <p>
+                    Completamente <strong>de Graça</strong>
+                </p>
+            </div>
+            <form action="/" class="join" method="post" id="assineForm">
+                <h4>Assine Agora!</h4>
+                <label for="email">Seu endereço de E-Mail</label>
+                <input type="email" name="email" id="emailInput" required placeholder="joao.silva@hotmail.com" />
+                <button type="submit" class="button-link">Quero ficar informado</button>
+            </form>
         </div>
-        <form action="/" class="join" method="post" id="assineForm">
-            <h4>Assine Agora!</h4>
-            <label for="email">Seu endereço de E-Mail</label>
-            <input type="email" name="email" id="emailInput" required placeholder="joao.silva@hotmail.com" />
-            <button type="submit" class="button-link">Quero ficar informado</button>
-        </form>
     </main>
     <section id="vantagens">
         <h1>Vantagens</h1>
@@ -113,8 +117,10 @@
 
     </section>
     <footer>
-        <h1>O que está esperando? Assine já!</h1>
-        <a href="#assineForm" class="button-link">Quero assinar agora</a>
+        <div class="footer-container">
+            <h1>O que está esperando? Assine já!</h1>
+            <a href="#assineForm" class="button-link">Quero assinar agora</a>
+        </div>
     </footer>
 </body>
 </html>
