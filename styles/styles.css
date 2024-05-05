@@ -16,6 +16,10 @@
     font-family: "Titillium Web", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 h2, h3, h4, h5, strong{
     color: var(--yellow-color);
 }
@@ -48,6 +52,7 @@ header nav ul li{
 header nav ul li a{
     text-decoration: underline;
     font-weight: bold;
+    transition: 500ms;
 }
 
 /* MAIN */
@@ -105,6 +110,7 @@ main form.join input[type="email"]{
     color: var(--dark-color);
     font-weight: bold;
     text-decoration: underline;
+    transition: 250ms;
 }
 
 /* SESSIONS */
@@ -118,6 +124,13 @@ section{
 
 section h1{
     font-size: 1.5em;
+}
+
+section#testemunhos{
+    background-image: url("../assets/img/lesly-juarez-isWEKdSRCrA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 100px 120px 10em 1em var(--dark-color);
 }
 
 .card-container{
@@ -136,6 +149,7 @@ section h1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: 250ms;
 }
 
 .card span.card-title{
@@ -178,6 +192,27 @@ footer h1{
     padding: 2.5em 0;
 }
 
+/* ANIMAÇÕES */
+
+header nav ul li a:hover{
+    font-size: 1.05em;
+    color: var(--golden-color);
+}
+
+.button-link:hover{
+    color: var(--white-color);
+    background-color: var(--yellow-color);
+    transform: scale(105%, 105%);
+}
+
+.button-link:active{
+    color: var(--yellow-color);
+    background-color: var(--white-color);
+}
+
+.card:hover{
+    transform: scale(102%, 102%);
+}
 /* MEDIA QUERIES */
 /* TABLETES */
 @media only screen and (min-width: 768px){
@@ -190,6 +225,14 @@ footer h1{
         display: flex;
         justify-content: space-evenly;
         list-style: none;
+    }
+
+    main{
+        background-attachment: fixed;
+    }
+
+    section#testemunhos{   
+       background-attachment: fixed;
     }
 
     main > h4{
