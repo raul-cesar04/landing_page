@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 
+
+
+
+/* Variaveis CSS */
 :root{
     --white-color: #eef0f2;
     --grey-color: #36393b;
@@ -8,6 +12,9 @@
     --dark-color: #0E0F19;
 }
 
+
+
+/* RESET */
 *{
     margin: 0;
     padding: 0;
@@ -20,9 +27,28 @@ html{
     scroll-behavior: smooth;
 }
 
+
+
+
+/* GERAL */
 h2, h3, h4, h5, strong{
     color: var(--yellow-color);
 }
+
+.button-link{
+    background-color: var(--golden-color);
+    padding: 1.25em;
+    border: 0;
+    border-radius: 1em;
+    cursor: pointer;
+    color: var(--dark-color);
+    font-weight: bold;
+    text-decoration: underline;
+    transition: 250ms;
+}
+
+
+
 
 /* HEADER */
 header{
@@ -54,6 +80,9 @@ header nav ul li a{
     font-weight: bold;
     transition: 500ms;
 }
+
+
+
 
 /* MAIN */
 
@@ -101,17 +130,8 @@ main form.join input[type="email"]{
     border: 2px solid var(--yellow-color)
 }
 
-.button-link{
-    background-color: var(--golden-color);
-    padding: 1.25em;
-    border: 0;
-    border-radius: 1em;
-    cursor: pointer;
-    color: var(--dark-color);
-    font-weight: bold;
-    text-decoration: underline;
-    transition: 250ms;
-}
+
+
 
 /* SESSIONS */
 section, footer{
@@ -133,6 +153,10 @@ section#testemunhos{
     box-shadow: inset 100px 120px 10em 1em var(--dark-color);
 }
 
+
+
+
+/* CARD */
 .card-container{
     display: grid;
     grid-template-columns: 1fr;
@@ -180,6 +204,9 @@ section#testemunhos{
 }
 
 
+
+
+/* FOOTER */
 footer div.footer-container{
     display: flex;
     flex-direction: column;
@@ -188,9 +215,12 @@ footer div.footer-container{
 }
 
 footer h1{
-    font-size: 1em;
+    font-size: 2.5em;
     padding: 2.5em 0;
 }
+
+
+
 
 /* ANIMAÇÕES */
 
@@ -213,7 +243,13 @@ header nav ul li a:hover{
 .card:hover{
     transform: scale(102%, 102%);
 }
+
+
+
 /* MEDIA QUERIES */
+
+
+
 /* TABLETES */
 @media only screen and (min-width: 768px){
     header nav{
@@ -268,6 +304,10 @@ header nav ul li a:hover{
     }
 }
 
+
+
+
+/* DESKTOPS */
 @media only screen and (min-width: 1024px){
     header{
         flex-direction: row;
